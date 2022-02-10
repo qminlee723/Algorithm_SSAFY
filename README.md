@@ -4,17 +4,49 @@
 
 ### Directory structure
 
-Algorithm_Problem#/
+**Algorithm/**
 
-​	problem.md
+​	**BOJ/**
 
-​	input.txt
+​		Algorithm_number/
 
-​	sol1
+​			Algorithm_number.md
 
-​	sol2
+​			input.txt
 
-​	..
+​			sol1
+
+​			sol2
+
+​			..
+
+​	**SWEA/**
+
+​		Algorithm_number/
+
+​			Algorithm_number_title.md
+
+​			input.txt
+
+​			sol1
+
+​			sol2
+
+​			..
+
+​	**ECT/**
+
+​		Algorithm_number_title/
+
+​			Algorithm_number_title.md
+
+​			input.txt
+
+​			sol1
+
+​			sol2
+
+​			..
 
 
 
