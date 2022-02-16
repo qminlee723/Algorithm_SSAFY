@@ -9,6 +9,7 @@ import sys
 
 sys.stdin = open('input.txt')
 
+# 사다리표 받아오기
 for _ in range(10):
     T = int(input())
     ladder_list = [list(map(int, input().split())) for _ in range(100)]  # 비어있는 사다리
@@ -19,14 +20,21 @@ for _ in range(10):
             break                       # 그 곳이 출발점
     i = 99                              # 마지막 row 이므로 인덱스는 99일 것
 
-    #
+    # 이제 출발점에서 움직여보자
     while i > 0:                                        # 가장 위로 올라와 더 이상 갈 곳이 없을 때 까지, 즉 i > 0 일 동안
+        # 별 일 없으면 올라갑니다
         i -= 1                                          # i 에서 1씩 빼서 올라간다
+
+        # 단, 양 옆을 확인해서 1이 있으면 그쪽으로 갑니다
+        # 먼저 왼쪽 확인
         if j > 0 and ladder_list[i][j-1] == 1:          # 만약 j가 양수이고(즉, 표 안에 존재하고) j-1(왼쪽)가 가리키는 값이 1일 때
             while j > 0 and ladder_list[i][j-1] == 1:   # 그 값들이 계속 1을 가리키는 동안
                 j -= 1                                  # j는 왼쪽으로 이동한다
+
+        # 오른쪽 확인
         elif j < 99 and ladder_list[i][j+1] == 1:       # 만약 j가 99보다 작고(즉, 표 안에 존재하고) j+1(오른쪽)이 가리키는 값이 1일 때
             while j < 99 and ladder_list[i][j+1] ==1:   # 그 값들이 계속 1을 가리키는 동안
                 j += 1                                  # j는 오른쪽으로 이동한다
 
+    # 이제
     print(f'#{T} {j}')                                 # 이러한 과정을 끝마친 후, 인덱스 j를 반환한다
