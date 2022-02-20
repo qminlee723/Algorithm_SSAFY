@@ -34,7 +34,7 @@ for tc in range(1, T + 1):
         max_sum = 0
         # 파리판에서 파리채가 움직일 수 있는 최대 범위
         # 단, 시작점은 (1,1)이어야 한다 (otherwise, 파리판 밖으로 나감).
-        # 그래서 
+        # 범위를 그림을 그려서 보면, 2를 더해줘야함(...) 카우방 엑셀 그림 참고
         for i in range(1, N-M+2):
             for j in range(1, N-M+2):
                 summation = 0
