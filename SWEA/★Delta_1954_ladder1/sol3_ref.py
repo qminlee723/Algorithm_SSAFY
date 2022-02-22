@@ -38,6 +38,9 @@ for tc in range(1, T + 1):
     rlt = ladder(find_2(ladders))
     print(f'#{tc} {rlt}')
 
+
+
+
 #한지희
 
 import sys
@@ -65,6 +68,7 @@ for tc in range(1, T + 1):
             continue
         x -= 1  # 한 줄 위로 올라가기
     print(f'#{a} {y}')
+
 
 # 경하님 풀이
 for _ in range(10):

@@ -32,6 +32,9 @@ for tc in range(1, T + 1):
             if max_sum < summation:
                 max_sum = summation
 
+
+
+
 print(f'#{tc} {max_sum}')
 
 

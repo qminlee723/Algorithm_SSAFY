@@ -56,3 +56,6 @@ for _ in range(10):
 
 
     print(f'#{tc} {max_sum}')
+
+
+    
