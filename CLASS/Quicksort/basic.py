@@ -33,6 +33,19 @@ print(lst)
 
 
 
-# PYTHONIC 한 버전
-def quicksort_pythonic(arr, start, end):
-    pivot, other = arr[0], arr[1:]
+## PYTHONIC 한 버전
+
+# def quicksort(arr):
+#     if len(arr) <= 1:
+#         return arr
+#     pivot, other = arr[0], arr[1:]
+#     left = [x for x in other if x <= pivot]
+#     right = [x for x in other if x > pivot]
+#     return quicksort(left) + [pivot] + quicksort(right)
+#
+#
+# lst = [69, 10, 30, 2, 16, 8, 31, 22]
+# print(lst)
+#
+# sorted_lst = quicksort(arr=lst)
+# print(sorted_lst)

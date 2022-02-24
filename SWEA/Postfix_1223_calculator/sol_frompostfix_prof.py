@@ -31,4 +31,21 @@ ans = stack.pop()
 print(ans)
 
 
-# p2 가 0일 때 등
+
+# def
+
+def calculator(stack, operation):
+    p1 = stack.pop()
+    p2 = stack.pop()
+
+    if operation == '+':
+        return p1 + p2
+
+    elif operation == '-':
+        return p1 - p2
+
+    elif operation == '*':
+        return p1 * p2
+
+    elif operation == '/':
+        return p1 // p2
