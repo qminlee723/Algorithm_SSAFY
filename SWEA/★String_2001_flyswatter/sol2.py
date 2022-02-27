@@ -7,24 +7,22 @@ sys.stdin = open("input.txt")
 
 T = int(input())
 for tc in range(1, T + 1):
-
-    # 입력 받기
-    N, M = map(int, input().split())
-    flies = [list(map(int, input().split())) for _ in range(N)]
+    n, m = map(int, input().split())
+    board = [list(map(int, input().split())) for _ in range(n)]
 
     max_kill = 0
-    for r in range(N - M + 1):
-        for c in range(N - M  + 1):
+    for r in range(n - m + 1):
+        for c in range(n - m + 1):
 
             curr_kill = 0
-            for i in range(M):
-                for j in range(M):
-                    curr_kill += flies[r + i][c + j]  # 파리 계산
+            for i in range(m):
+                for j in range(m):
+                    curr_kill += board[r + i][c + j]
 
             if max_kill < curr_kill:
                 max_kill = curr_kill
 
-    print(f"#{tc} {max_kill}")
+    print(f'#{tc} {max_kill}')
 
 
 

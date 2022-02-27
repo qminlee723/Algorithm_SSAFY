@@ -10,9 +10,12 @@
 # i 와 j 가 인덱스인걸 자꾸 까먹는다 [i]였다가 i 였다가..하는 과정이 헷갈림
 # SWEA 인풋 어떤 식으로 들어오는지 확인할 것. 덧글 보고 알았다 테스트 케이스 숫자가 돈다는 걸
 
+
+
 import sys
 
 sys.stdin = open('input.txt')
+
 
 for _ in range(10):
     T = int(input())

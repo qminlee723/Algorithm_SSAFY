@@ -1,4 +1,42 @@
 from collections import deque
+import sys
+
+sys.stdin = open('input.txt')
+
+n, m = map(int, input().split())
+
+graph = defaultdict(list)
+for _ in range(m):
+    a, b = map(int, input().split())
+    graph[b].append(a)
+
+def bfs(x, y):
+    queue = deque([x, y])
+    visited =
+    visited[x, y] = True
+
+    while queue:
+        x, y = queue.popleft()
+        for u in graph[v]:
+            if not visited[u]:
+                queue.append(u)
+                visited[u] = True
+                count += 1
+    return count
+
+
+result = []
+for i in range(1, n+1):
+    count = bfs(i)
+    if count > max_count:
+        max_count = count
+        result = [i]
+    elif count == max_count:
+        result.append(i)
+
+print(*result)
+
+from collections import deque
 
 
 def bfs(x, y)
