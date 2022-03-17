@@ -26,10 +26,8 @@ if M >= 60:
     M -= M // 60 * 60
 
 if H >= 24:
-    H = 0
+    H %= 24
+
 
 print(H, M, S)
 
-H = H + (duration + M * 60 + S) // 3600
-M =
-print(H)
