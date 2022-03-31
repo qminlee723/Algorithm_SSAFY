@@ -5,7 +5,7 @@ sys.stdin = open('input.txt')
 def dfs(v):
     visited[v] = 1
     for i in range(1, N+1):
-        if visited[i] == 0 and 
+        if visited[i] == 0 and
 
     return
 
@@ -20,6 +20,7 @@ def bfs(v):
 
     return
 
+# input
 N, M, V = map(int, input().split())
 nodes = []
 graph = {}
