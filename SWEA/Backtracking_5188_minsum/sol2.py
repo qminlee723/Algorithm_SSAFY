@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('../Backtracking_5188_minsum/input.txt')
+sys.stdin = open('input.txt')
 
 # dfs
 def dfs(s, cnt, acc):
