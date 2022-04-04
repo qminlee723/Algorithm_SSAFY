@@ -14,6 +14,7 @@ for _ in range(10):
     tc = int(input())
     arr = [list(map(int, input().split())) for j in range(100)]
 
+
 # 행의 합에서 최대값 구하기
     max_v = 0
     max_sum = 0 # 행, 열, 대각선 합 중 최댓값을 저장하는 변수
