@@ -28,14 +28,4 @@ for tc in range(1, T + 1):
         if result > 0:      # 조망권이 확보된 세대가 있으면
             cnt += result   # 총합에다 더하기
 
-    print(f'#{tc} {cnt}')import sys
-
-sys.stdin = open('input.txt')
-
-T = int(input())
-
-
-for tc in range(1, T + 1):
-    
-    print(f'#{tc} ')
-
+    print(f'#{tc} {cnt}')

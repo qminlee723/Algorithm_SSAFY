@@ -1,15 +1,14 @@
 import sys
 sys.stdin = open('input.txt')
 
+import math
+
+
+def lcm(a, b):
+    return a * b // math.gcd(a, b)
+
+
 T = int(input())
-
-def cal(a, b):
-    A, B = a, b
-    while a % b == 0:
-        a, b = b, a % b
-    return ((A * B) // b)
-
-for _ in range(T):
+for i in range(T):
     A, B = map(int, input().split())
-    print(cal(A, B))
-
+    print(lcm(A,B))
